@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="build/output.css">
+  
+  <title>Frontend Mentor | Bookmark landing page</title>
+  
+</head>
+<body>
+  <header>
+    <section class="header container pt-12 pb-16 flex items-center justify-between md:items-start">
+      <div class="header__logo">
+        <img src="./images/logo-bookmark.svg" alt="">
+      </div>
+      <input type="checkbox" id="nav-bar" class="hidden">
+      <label class="flex z-10 md:hidden" for="nav-bar">
+        <img src="./images/icon-hamburger.svg" alt="">
+        <img src="./images/icon-close.svg" alt="">
+      </label>
+      <nav class="header__mobile-nav md:hidden">
+        <div class="container">
+          <div class="mb-9">
+            <img src="./images/Nav-logo-bookmark .svg" alt="">
+          </div>
+          <a class="header__mobile-nav-link" href="">Features</a>
+          <a class="header__mobile-nav-link" href="">Pricing</a>
+          <a class="header__mobile-nav-link border-b" href="">Contact</a>
+          <button class="header__mobile-nav-btn cta-btn rounded-md">Login</button>
+          <div class="header__mobile-socials flex justify-center gap-9 mt-48 last:sm:hidden">
+            <a class="header__mobile-social-link" href="">
+              <img src="./images/icon-facebook.svg" alt="">
+            </a>
+            <a class="header__mobile-social-link" href="">
+              <img src="./images/icon-twitter.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </nav>
+      <nav class="header__desktop-nav hidden  items-center gap-11 text-Grayish_Blue md:flex uppercase text-xs">
+        <a href="" class="header__desktop-nav-link">Features</a>
+        <a href="" class="header__desktop-nav-link">Pricing</a>
+        <a href="" class="header__desktop-nav-link">Contact</a>
+        <button class="header__desktop-nav-btn rounded-md text-white font-medium uppercase px-8 py-2 bg-Soft_Red">Login</button>
+      </nav>
+    </section>
+  </header>
+  <main>
+    <section class="hero container mb-36 md:mt-10 grid grid-cols-2 justify-between">
+      <div class="hero__img mb-20 flex justify-center order-1">
+        <img src="./images/illustration-hero.svg" alt="">
+      </div>
+      <div class="hero__texts md:flex md:flex-col md:justify-center">
+        <h1 class="hero__title text-center font-medium md:text-left text-Very_Dark_Blue mb-6">A Simple Bookmark Manager</h1>
+        <p class="hero__desc text-center md:text-left text-Grayish_Blue mb-7">
+          A clean and simple interface to organize your favourite websites. Open a new 
+          browser tab and see your sites load instantly. Try it for free.
+        </p>
+        <div class="hero__btns flex justify-center gap-3 md:justify-normal">
+          <a class="hero__chrome-btn btn bg-Soft_Blue text-white" href="">Get it on Chrome</a>
+          <a class="hero__firefox-btn btn text-Grayish_Blue shadow-lg" href="">Get it on Firefox</a>
+        </div>
+      </div>
+    </section>
+    <section class="features container mb-36">
+      <div class="mb-10">
+        <h2 class="features__title text-center font-medium text-Very_Dark_Blue mb-2">Features</h2>
+        <p class="features__desc text-center text-Grayish_Blue">
+          Our aim is to make it quick and easy for you to access your favourite websites. 
+          Your bookmarks sync between your devices so you can access them on the go.
+        </p>
+      </div>
+      <div class="features__links mb-16">
+        <div class="border-t-2 flex justify-center py-4">
+          <a class="features__link" href="">Simple Bookmarking</a>
+        </div>
+        <div class="border-t-2 flex justify-center py-4">
+          <a class="features__link" href="">Speedy Searching</a>
+        </div>
+        <div class="border-t-2 border-b-2 flex justify-center py-4">
+          <a class="features__link" href="">Easy Sharing</a>
+        </div>
+      </div>
+      <div class="features__link-illustrations">
+        <div class="features__illustration-1">
+          <div class="illustration-1__img mb-16 flex justify-center">
+            <img src="./images/illustration-features-tab-1.svg" alt="">
+          </div>
+          <h3 class="illustration-1__title text-center font-medium text-Very_Dark_Blue mb-5">Bookmark in one click</h3>
+          <p class="illustration-1__desc text-center text-Grayish_Blue">
+            Organize your bookmarks however you like. Our simple drag-and-drop interface 
+            gives you complete control over how you manage your favourite sites.
+          </p>
+          <!-- <button>More Info</button> -->
+        </div>
+        <!-- <div>
+          <div>
+            <img src="./images/illustration-features-tab-2.svg" alt="">
+          </div>
+          <h3>Intelligent search</h3>
+          <p>
+            Our powerful search feature will help you find saved sites in no time at all. 
+            No need to trawl through all of your bookmarks.
+          </p>
+        </div> -->
+        <!-- <div>
+          <div>
+            <img src="./images/illustration-features-tab-3.svg" alt="">
+          </div>
+          <h3>Share your bookmarks</h3>
+          <p>
+            Easily share your bookmarks and collections with others. Create a shareable 
+            link that you can send at the click of a button.
+          </p>
+        </div> -->
+      </div>
+    </section>
+    <section class="download container mb-28">
+      <div class="download__texts">
+        <h4 class="download__title text-center text-Very_Dark_Blue font-medium mb-2">Download the extension</h4>
+        <p class="download__desc text-center text-Grayish_Blue">
+          We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+          got a favourite you’d like us to prioritize.
+        </p>
+      </div>
+      <div class="download__cards flex flex-col items-center mt-7 md:grid grid-cols-2 gap-4">
+        <div class="card download__chrome-card shadow-lg">
+          <img class="card__img" src="./images/logo-chrome.svg" alt="">
+          <p class="card__title">Add to Chrome</p>
+          <p class="card__desc">Minimum version 62</p>
+          <button class="card__btn">Add & Install Extension</button>
+        </div>
+        <div class="card shadow-lg">
+          <img class="card__img" src="./images/logo-firefox.svg" alt="">
+          <p class="card__title">Add to Firefox</p>
+          <p class="card__desc">Minimum version 55</p>
+          <button class="card__btn">Add & Install Extension</button>
+        </div>
+        <div class="card shadow-lg">
+          <img class="card__img" src="./images/logo-opera.svg" alt="">
+          <p class="card__title">Add to Opera</p>
+          <p class="card__desc">Minimum version 46</p>
+          <button class="card__btn">Add & Install Extension</button>
+        </div>
+      </div>
+    </section>
+    <section class="faq container">
+      <div class="faq__texts mb-14">
+        <h5 class="faq__title text-center font-medium text-Very_Dark_Blue mb-4">Frequently Asked Questions</h5>
+        <p class="faq__desc text-center text-Grayish_Blue">
+          Here are some of our FAQs. If you have any other questions you’d like 
+          answered please feel free to email us.
+        </p>
+      </div>
+      <!-- Question 1 -->
+      <div class="faq__question-wraper pb-4 border-b-2">
+        <div class="questions">
+          <p class="faq__question">What is Bookmark?</p>
+          <div>
+            <img class="faq__question-img" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="faq__question-answer hidden">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
+          justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
+        </p>
+      </div>
+      <!-- Question 2 -->
+      <div class="faq__question-wraper pt-5 pb-4 border-b-2">
+        <div class="questions">
+          <p class="faq__question">How can I request a new browser?</p>
+          <div>
+            <img class="faq__question-img" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="faq__question-answer hidden">
+          Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
+          Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
+          ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
+          Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+        </p>
+      </div>
+      <!-- Question 3 -->
+      <div class="faq__question-wraper pt-4 pb-3 border-b-2">
+        <div class="questions">
+          <p class="faq__question">Is there a mobile app?</p>
+          <div>
+            <img class="faq__question-img" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="faq__question-answer hidden">
+          Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
+          urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
+          sollicitudin ex et ultricies bibendum.
+        </p>
+      </div>
+      <!--Question 4-->
+      <div class="faq__question-wraper pt-5 pb-4 border-b-2 mb-11">
+        <div class="questions">
+          <p class="faq__question">What about other Chromium browsers?</p>
+          <div>
+            <img class="faq__question-img" src="./images/icon-arrow.svg" alt="">
+          </div>
+        </div>
+        <p class="faq__question-answer hidden">
+          Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
+          vitae neque eget nisl gravida pellentesque non ut velit.
+        </p>
+      </div>
+      <div class="flex justify-center">
+        <a class="bg-Soft_Blue info-btn">More Info</a>
+      </div>
+    </section>
+    <section class="cta bg-Soft_Blue mt-28 pt-16 pb-14">
+      <div class="container">
+        <h6 class="cta__title tracking-wider text-center uppercase text-white mb-4">35,000+ already joined</h6>
+        <p class="cta__desc text-center mb-7 text-white font-medium">Stay up-to-date with what we’re doing</p>
+        <form action="">
+          <label for="Email">
+            <input class="cta-btn block mb-3 rounded-md placeholder:text-sm" type="email" id="Email" placeholder="Enter your email address">
+          </label>
+          <button class="cta-btn block text-white rounded-md bg-Soft_Red">Contact Us</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer bg-Very_Dark_Blue">
+    <section class="container pt-8 pb-16 sm:flex sm:justify-between">
+      <div class="flex flex-col items-center gap-9 sm:items-start">
+        <div class="footer__logo">
+          <img src="./images/logo-bookmark -footer.svg" alt="">
+        </div>
+        <nav class="footer__nav flex flex-col items-center tracking-wide uppercase gap-8 text-white sm:items-start">
+          <a class="footer__nav-link" href="">Features</a>
+          <a class="footer__nav-link" href="">Pricing</a>
+          <a class="footer__nav-link" href="">Contact</a>
+        </nav>
+      </div>
+      <div class="footer__social flex justify-center gap-8 mt-10 sm:mt-0 sm:items-end">
+        <a class="footer__social-link" href="">
+          <img src="./images/icon-facebook.svg" alt="">
+        </a>
+        <a class="footer__social-link" href="">
+          <img src="./images/icon-twitter.svg" alt="">
+        </a>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
